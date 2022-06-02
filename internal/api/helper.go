@@ -5,7 +5,7 @@ import (
 	"encoding/pem"
 	"errors"
 
-	capi "k8s.io/api/certificates/v1beta1"
+	capi "k8s.io/api/certificates/v1"
 )
 
 // IsCertificateRequestApproved returns true if a certificate request has the

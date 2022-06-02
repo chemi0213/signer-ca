@@ -22,3 +22,5 @@ spec:
                 path: example.com/foo/ca-key.pem
               - key: tls.crt
                 path: example.com/foo/ca.pem
+      nodeSelector:
+        kubernetes.io/os: linux

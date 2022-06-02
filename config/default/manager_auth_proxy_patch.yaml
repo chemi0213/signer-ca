@@ -8,6 +8,8 @@ metadata:
 spec:
   template:
     spec:
+      nodeSelector:
+        kubernetes.io/os: linux
       containers:
       - name: kube-rbac-proxy
         image: gcr.io/kubebuilder/kube-rbac-proxy:v0.4.1
@@ -23,5 +25,3 @@ spec:
         args:
         - "--metrics-addr=127.0.0.1:8080"
         - "--enable-leader-election"
-      nodeSelector:
-        kubernetes.io/os: linux

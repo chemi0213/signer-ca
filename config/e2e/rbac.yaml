@@ -9,6 +9,7 @@ rules:
   - example.com/foo
   resources:
   - signers
+  - leases
   verbs:
   - sign
 ---

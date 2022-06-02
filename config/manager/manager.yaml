@@ -39,3 +39,4 @@ spec:
       terminationGracePeriodSeconds: 10
       nodeSelector:
         kubernetes.io/os: linux
+

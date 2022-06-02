@@ -9,9 +9,16 @@ rules:
   - example.com/foo
   resources:
   - signers
-  - leases
   verbs:
   - sign
+- apiGroups:
+  - coordination.k8s.io
+  resourceNames:
+  - example.com/foo
+  resources:
+  - leases
+  verbs:
+  - get
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding

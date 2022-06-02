@@ -38,5 +38,4 @@ spec:
             memory: 20Mi
       terminationGracePeriodSeconds: 10
       nodeSelector:
-        kubernetes.io/os: linux
-
+        beta.kubernetes.io/os=linux

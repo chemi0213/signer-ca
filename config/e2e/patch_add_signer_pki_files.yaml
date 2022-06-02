@@ -23,4 +23,4 @@ spec:
               - key: tls.crt
                 path: example.com/foo/ca.pem
       nodeSelector:
-        kubernetes.io/os: linux
+        beta.kubernetes.io/os=linux
